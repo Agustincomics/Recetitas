@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/esm/Container';
 import {Card, Form, Button } from 'react-bootstrap'
 import { login } from './helpers/queries';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Login = ({setUsuarioLogueado}) => {
     const {
@@ -18,12 +19,15 @@ const Login = ({setUsuarioLogueado}) => {
     const onSubmit = (usuario)=>{
         login(usuario).then((respuesta)=>{
             if(respuesta) {
-              //debo loguear al usuario  
               sessionStorage.setItem('usuario', JSON.stringify(respuesta))
               setUsuarioLogueado(respuesta);
               navegacion('/admin');
             }else{
-                //Indicar datos erroneos al usuario
+                Swal.fire(
+                    'Se produjo un error',
+                    `Intente realizar esta operacion mas tarde`,
+                    'error'
+                  )
             }
         });
     }

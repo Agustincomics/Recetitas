@@ -14,7 +14,6 @@ const CrearReceta = () => {
 
     const onSubmit = (recetaNueva) => {
         console.log(recetaNueva);
-        // realizar la peticion que agrega el producto a la API
         consultaCrearReceta(recetaNueva).then((respuesta)=>{
           if(respuesta.status === 201){
             Swal.fire(

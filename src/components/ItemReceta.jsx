@@ -20,7 +20,6 @@ const ItemReceta = ({receta, setRecetas}) => {
           }).then((result) => {
             if (result.isConfirmed) {
             
-              //aqui tengo que hacer la peticion DELETE
               consultaBorrarReceta(receta.id).then( (respuesta) =>{
                 if(respuesta.status === 200){
                   Swal.fire(
@@ -28,7 +27,6 @@ const ItemReceta = ({receta, setRecetas}) => {
                     `La receta ${receta.nombreReceta} fue eliminado`,
                     'success'
                   );
-                  //actualizar el state producto del componente Administrador
                   obtenerRecetas().then((respuesta)=> setRecetas(respuesta) )
 
                 }else{
