@@ -22,8 +22,8 @@ const Inicio = () => {
       <div className="banner-container">
         <img
           className="banner"
-          src="https://www.barilochense.com/suplementos/gourmet/fotos/71127.jpg"
-          alt="fondo cafe"
+          src="https://images6.alphacoders.com/129/1290175.jpg"
+          alt="fondo comida"
         />
       </div>
       <Container className='mt-5 mb-3'>
