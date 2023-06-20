@@ -1,0 +1,57 @@
+{
+  "recetas": [
+    {
+      "id": 1,
+      "nombreReceta": "Empanada Tucumana",
+      "Instrucciones": "BLA BLA BLA",
+      "imagen": "URLImagen"
+    },
+    {
+      "id": 2,
+      "nombreReceta": "Milanesa con Pure",
+      "Instrucciones": "BLA2 BLA2 BLA2",
+      "imagen": "URLImagen2"
+    },
+    {
+      "id": 3,
+      "nombreReceta": "Flan de chocolate",
+      "Instrucciones": "BLA3 BLA3 BLA3",
+      "imagen": "URLImagen3"
+    },
+    {
+      "nombreReceta": "Rosquilla",
+      "Instrucciones": "BLA4 BLA4 BLA4",
+      "imagen": "URLImagen4",
+      "id": 4
+    },
+    {
+      "nombreReceta": "chocolatada nueva 3",
+      "imagen": "https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/06/18172916/leche-con-chocolate.jpg",
+      "Instrucciones": "mezclar la leche en polvo con cacao 3",
+      "id": 5
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombreUsuario": "admin",
+      "email": "adim@gmail.com",
+      "contra": "Yjp6g3g3"
+    },
+    {
+      "nombreUsuario": "agustin",
+      "email": "agus@gmail.com",
+      "contra": "Agus1234",
+      "id": 2
+    },
+    {
+      "nombreUsuario": "AgustinComics",
+      "email": "comic@gmail.com",
+      "contra": "Comics12",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
