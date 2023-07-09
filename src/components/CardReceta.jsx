@@ -12,7 +12,7 @@ const CardReceta = ({receta}) => {
                     <Card.Text>
                         {receta.Instrucciones}
                     </Card.Text>
-                    <Link className="btn btn-warning" to={`detalle/${receta.id}`}>Leer receta</Link>
+                    <Link className="btn btn-warning" to={`detalle/${receta._id}`}>Leer receta</Link>
                 </Card.Body>
         </Card>
     );

@@ -1,4 +1,5 @@
 const URL_USUARIO = import.meta.env.VITE_API_USUARIO;
+const URL_NUEVO = import.meta.env.VITE_API_USUARIONUEVO;
 const URL_RECETA = import.meta.env.VITE_API_RECETA;
 
 export const login = async (usuario)=>{
@@ -33,7 +34,7 @@ export const login = async (usuario)=>{
 
 export const consultaCrearUsuario = async(usuario)=>{
     try {
-        const respuesta = await fetch(URL_USUARIO, {
+        const respuesta = await fetch(URL_NUEVO, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

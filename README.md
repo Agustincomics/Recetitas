@@ -1,4 +1,4 @@
-# Cafecito - React - C39i - Agustin Sandoval 
+# Recetitas2 - React - C39i - Agustin Sandoval 
 
 ![React](https://hips.hearstapps.com/hmg-prod/images/cocina-con-lamas-de-madra-1617582027.jpg?crop=1xw:1xh;center,top&resize=640:*)
 

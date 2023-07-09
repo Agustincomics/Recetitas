@@ -43,6 +43,12 @@
       "email": "comic@gmail.com",
       "contra": "Comics12",
       "id": 3
+    },
+    {
+      "nombreUsuario": "Prueba",
+      "email": "prueba@gmail.com",
+      "contra": "Prueba12",
+      "id": 4
     }
   ],
   "profile": {

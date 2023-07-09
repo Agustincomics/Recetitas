@@ -20,7 +20,7 @@ const ItemReceta = ({receta, setRecetas}) => {
           }).then((result) => {
             if (result.isConfirmed) {
             
-              consultaBorrarReceta(receta.id).then( (respuesta) =>{
+              consultaBorrarReceta(receta._id).then( (respuesta) =>{
                 if(respuesta.status === 200){
                   Swal.fire(
                     'Producto eliminado',
@@ -43,11 +43,11 @@ const ItemReceta = ({receta, setRecetas}) => {
 
     return (
         <tr>
-            <td>{receta.id}</td>
+            <td>{receta._id}</td>
             <td>{receta.nombreReceta}</td>
             <td>{receta.Instrucciones}</td>
             <td>
-                <Link className="btn btn-warning me-2" to={`/admin/editar/${receta.id}`}>Editar</Link>
+                <Link className="btn btn-warning me-2" to={`/admin/editar/${receta._id}`}>Editar</Link>
                 <Button variant="danger" onClick={borrarReceta}>
                 Borrar
                 </Button>

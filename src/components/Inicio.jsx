@@ -31,7 +31,7 @@ const Inicio = () => {
         <hr />
         <Row>
           {recetas.map((receta) => (
-            <Col className='m-2' key={receta.id} sm={6} md={4} lg={3}>
+            <Col className='m-2' key={receta._id} sm={6} md={4} lg={3}>
               <CardReceta receta={receta} />
             </Col>
           ))}

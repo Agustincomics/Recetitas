@@ -27,6 +27,7 @@ const Registro = () => {
               `El usuario ${usuarioNuevo.nombreUsuario} fue registrado`,
               'success'
             );
+            navegacion('/login');
             reset();
           }else{
             Swal.fire(

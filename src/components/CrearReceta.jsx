@@ -1,10 +1,12 @@
 import React from 'react';
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 import Swal from "sweetalert2";
 import { consultaCrearReceta } from './helpers/queries';
 
 const CrearReceta = () => {
+    const navegacion = useNavigate();
     const {
         register,
         handleSubmit,
@@ -19,8 +21,9 @@ const CrearReceta = () => {
             Swal.fire(
               'Producto Creado',
               `El producto ${recetaNueva.nombreReceta} fue creado`,
-              'success'
+              'success',
             );
+            navegacion('/admin')
             reset();
           }else{
             Swal.fire(
@@ -83,7 +86,7 @@ const CrearReceta = () => {
                         message: "La cantidad minima de caracteres es de 2 digitos",
                     },
                     maxLength: {
-                        value: 100000,
+                        value: 1000000,
                         message: "La cantidad maxima es de 100.000 caracteres",
                     },
                     })}

@@ -96,7 +96,7 @@ const EditarReceta = () => {
                         message: "La cantidad minima de caracteres es de 2 digitos",
                     },
                     maxLength: {
-                        value: 100000,
+                        value: 1000000,
                         message: "La cantidad maxima es de 100.000 caracteres",
                     },
                     })}
